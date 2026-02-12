@@ -13,7 +13,7 @@
 
         body {
             font-family: 'Comic Sans MS', 'Arial', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
-            overflow: auto;
+            overflow: hidden;
             background: #000;
             touch-action: manipulation;
             width: 100%;
@@ -1121,6 +1121,22 @@
         // Prevent scrolling on body when pages are active
         document.addEventListener('DOMContentLoaded', function() {
             console.log('DOM Content Loaded');
+            
+            // Enable scrolling for all pages
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => {
+                page.style.webkitOverflowScrolling = 'touch';
+                
+                // Handle touch scrolling on mobile
+                let isScrolling = false;
+                page.addEventListener('touchstart', function(e) {
+                    isScrolling = true;
+                }, false);
+                
+                page.addEventListener('touchend', function(e) {
+                    isScrolling = false;
+                }, false);
+            });
             
             // Verify all pages exist
             for (let i = 1; i <= 4; i++) {
