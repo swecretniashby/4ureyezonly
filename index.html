@@ -178,6 +178,9 @@
             transition: transform 0.1s;
             user-select: none;
             animation: bounce 2s ease-in-out infinite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .kuromi-character img {
@@ -219,7 +222,7 @@
 
         .story-text.show {
             opacity: 1;
-            max-height: 2000px;
+            max-height: 3000px;
         }
 
         .story-text p {
@@ -402,24 +405,24 @@
         .moon {
             width: 80px;
             height: 80px;
-            background: #e8ecf1;
+            background: #f0f0f0;
             border-radius: 50%;
             position: absolute;
             top: 30px;
             right: 50px;
-            box-shadow: 0 0 30px #d0d7e0;
+            box-shadow: 0 0 30px #d0d0d0;
             transition: all 2s ease;
         }
 
         .sun {
             width: 100px;
             height: 100px;
-            background: #a8cce8;
+            background: #ffeb3b;
             border-radius: 50%;
             position: absolute;
             top: 50px;
             left: -150px;
-            box-shadow: 0 0 50px #a8cce8;
+            box-shadow: 0 0 50px #ffeb3b;
             transition: all 2s ease;
         }
 
@@ -832,6 +835,13 @@
         <div class="melody-container">
             <h1>🫶🏻 Bring the sunrise for Kuromi! 🫶🏻</h1>
             <p class="instruction">Tap the sky to turn night into day!</p>
+            <div class="sky" id="sky" onclick="turnToDay()">
+                <div class="stars" id="stars"></div>
+                <div class="moon" id="moon"></div>
+                <div class="sun" id="sun"></div>
+                <div class="clouds" id="clouds"></div>
+            </div>
+            <img src="https://i.ibb.co/hxq1R0LD/image.png" alt="Kuromi" class="character-img">
             <div class="story-text show">
                 <div class="photo-container">
                     <div class="photo-placeholder">
@@ -840,13 +850,6 @@
                 </div>
                 <p>you bring light into my life, turning my darkest nights into the brightest days. just like linus waiting for the great pumpkin, i also want to be the one who will wait for you no matter how long it takes, and be able to share every pain, smile and evrything that life would throw at us.</p>
             </div>
-            <div class="sky" id="sky" onclick="turnToDay()">
-                <div class="stars" id="stars"></div>
-                <div class="moon" id="moon"></div>
-                <div class="sun" id="sun"></div>
-                <div class="clouds" id="clouds"></div>
-            </div>
-            <img src="https://i.ibb.co/hxq1R0LD/image.png" alt="Kuromi" class="character-img">
             <div class="final-message" id="finalMessage">
                 DEAR KUROMI, WILL YOU BE MINE? 💙
             </div>
