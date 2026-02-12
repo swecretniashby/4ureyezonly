@@ -770,10 +770,6 @@
         <div class="charlie-brown-container">
             <h1>� Tap Kuromi! </h1>
             <p class="instruction">Tap Kuromi 10 times to reveal it!</p>
-            <div class="kuromi-character" id="kuromi" onclick="tapKuromi(event)">
-                <img src="https://i.ibb.co/fGLHBV1C/image.png" alt="Kuromi">
-            </div>
-            <div class="tap-counter" id="tapCounter">Taps: 0/10</div>
             <div class="story-text" id="story1">
                 <div class="photo-container">
                     <div class="photo-placeholder">
@@ -782,6 +778,10 @@
                 </div>
                 <p>fortune favors the bold—this is how everything felt when i first talked to u (even until now 😭). Just like charlie brown, i was genuinely scared and nervous but the moment we talked I knew u were WORTH THE RISK. WORTH THE FEAR. WORTH EVERYTHING!!!</p>
             </div>
+            <div class="kuromi-character" id="kuromi" onclick="tapKuromi(event)">
+                <img src="https://i.ibb.co/fGLHBV1C/image.png" alt="Kuromi">
+            </div>
+            <div class="tap-counter" id="tapCounter">Taps: 0/10</div>
             <button class="next-btn" id="next1" onclick="nextPage(2)">Continue →</button>
         </div>
     </div>
@@ -791,9 +791,6 @@
         <div class="snoopy-container">
             <h1>💙 Help Kuromi! 💙</h1>
             <p class="instruction">Collect all 6 items to help Kuromi!</p>
-            <img src="https://i.ibb.co/B75fhw6/image.png" alt="Kuromi" class="character-img">
-            <div class="kuromi-grid" id="kuromiGrid"></div>
-            <div class="tap-counter" id="itemCounter">Items: 0/6</div>
             <div class="story-text" id="story2">
                 <div class="photo-container">
                     <div class="photo-placeholder">
@@ -802,6 +799,9 @@
                 </div>
                 <p>while i was researching regarding snoopy (cause i know he's ur fav), i saw this "all you need is love, but a little chocolate now and then doesn't hurt." yk it resonates with what i feel 4 u. you make me appreciate life every time we talk and spend time with each other, and i also see the strength in you, the independence you carry so well. I know you're used to handling things on your own, and I respect that... BUT BUT I want you to know; you don't always have to. i want to be someone you can depend on, someone you can share the weight with, even the parts you don't talk about. let me be your chocolate when life gets bitter.</p>
             </div>
+            <img src="https://i.ibb.co/B75fhw6/image.png" alt="Kuromi" class="character-img">
+            <div class="kuromi-grid" id="kuromiGrid"></div>
+            <div class="tap-counter" id="itemCounter">Items: 0/6</div>
             <button class="next-btn" id="next2" onclick="nextPage(3)">Continue →</button>
         </div>
     </div>
@@ -811,10 +811,6 @@
         <div class="cooking-container">
             <h1>� Cook with Kuromi! 💙</h1>
             <p class="instruction">Add all ingredients to the pot!</p>
-            <img src="https://i.ibb.co/6cJcHswK/image.png" alt="Kuromi" class="character-img" style="width: 200px; height: 200px;">
-            <div class="pot" id="pot">🍳</div>
-            <div class="ingredients-area" id="ingredientsArea"></div>
-            <div class="tap-counter" id="cookCounter">Ingredients: 0/5</div>
             <div class="story-text" id="story3">
                 <div class="photo-container">
                     <div class="photo-placeholder">
@@ -823,6 +819,10 @@
                 </div>
                 <p>while i was watching snoopy (i watched the show so i could totally understand your fav mwehehe), snoopy always said the best meals are made with love, in the past i might not understand it, but now i would because of u. yk whenever u talk about food or cooking your eyes light up in a way that makes me understand what snoopy meant. even though we've only talked for a few days or more than a week, i've already observed so many things, the way you care for the people surrounding u, how u make them smile; you've taught me that without even trying.  you've shown me what it means to care about something so deeply that it becomes part of who you are. and I want to be there for all of it. let me share the successes and the struggles. let me be someone you can depend on, not because you need to, but because you want to. 🌸</p>
             </div>
+            <img src="https://i.ibb.co/6cJcHswK/image.png" alt="Kuromi" class="character-img" style="width: 200px; height: 200px;">
+            <div class="pot" id="pot">🍳</div>
+            <div class="ingredients-area" id="ingredientsArea"></div>
+            <div class="tap-counter" id="cookCounter">Ingredients: 0/5</div>
             <button class="next-btn" id="next3" onclick="nextPage(4)">Continue →</button>
         </div>
     </div>
@@ -832,13 +832,6 @@
         <div class="melody-container">
             <h1>🫶🏻 Bring the sunrise for Kuromi! 🫶🏻</h1>
             <p class="instruction">Tap the sky to turn night into day!</p>
-            <div class="sky" id="sky" onclick="turnToDay()">
-                <div class="stars" id="stars"></div>
-                <div class="moon" id="moon"></div>
-                <div class="sun" id="sun"></div>
-                <div class="clouds" id="clouds"></div>
-            </div>
-            <img src="https://i.ibb.co/hxq1R0LD/image.png" alt="Kuromi" class="character-img">
             <div class="story-text show">
                 <div class="photo-container">
                     <div class="photo-placeholder">
@@ -847,6 +840,13 @@
                 </div>
                 <p>you bring light into my life, turning my darkest nights into the brightest days. just like linus waiting for the great pumpkin, i also want to be the one who will wait for you no matter how long it takes, and be able to share every pain, smile and evrything that life would throw at us.</p>
             </div>
+            <div class="sky" id="sky" onclick="turnToDay()">
+                <div class="stars" id="stars"></div>
+                <div class="moon" id="moon"></div>
+                <div class="sun" id="sun"></div>
+                <div class="clouds" id="clouds"></div>
+            </div>
+            <img src="https://i.ibb.co/hxq1R0LD/image.png" alt="Kuromi" class="character-img">
             <div class="final-message" id="finalMessage">
                 DEAR KUROMI, WILL YOU BE MINE? 💙
             </div>
