@@ -12,7 +12,7 @@
         }
 
         body {
-            font-family: 'Comic Sans MS', 'Arial', sans-serif;
+            font-family: 'Comic Sans MS', 'Arial', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
             overflow: hidden;
             background: #000;
             touch-action: manipulation;
@@ -132,13 +132,12 @@
             width: 100%;
             height: 100vh;
             display: none;
-            justify-content: center;
+            justify-content: flex-start;
             align-items: center;
             padding: 20px;
             opacity: 0;
             transition: opacity 0.5s;
-            overflow-y: auto;
-            overflow-x: hidden;
+            overflow: hidden;
             flex-direction: column;
         }
 
@@ -167,6 +166,10 @@
             max-width: 600px;
             width: 100%;
             margin: 0 auto;
+            max-height: calc(100vh - 40px);
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
         }
 
         .kuromi-character {
@@ -267,6 +270,7 @@
             font-size: 40px;
             transition: all 0.3s;
             user-select: none;
+            font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Comic Sans MS', 'Arial', sans-serif;
         }
 
         .item:hover {
@@ -319,6 +323,7 @@
             font-size: 50px;
             transition: all 0.3s;
             user-select: none;
+            font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Comic Sans MS', 'Arial', sans-serif;
         }
 
         .ingredient:hover {
@@ -383,6 +388,10 @@
             max-width: 700px;
             width: 100%;
             margin: 0 auto;
+            max-height: calc(100vh - 40px);
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
         }
 
         .sky {
@@ -794,6 +803,7 @@
         <div class="snoopy-container">
             <h1>💙 Help Kuromi! 💙</h1>
             <p class="instruction">Collect all 6 items to help Kuromi!</p>
+            <img src="https://i.ibb.co/B75fhw6/image.png" alt="Kuromi" class="character-img">
             <div class="story-text" id="story2">
                 <div class="photo-container">
                     <div class="photo-placeholder">
@@ -802,7 +812,6 @@
                 </div>
                 <p>while i was researching regarding snoopy (cause i know he's ur fav), i saw this "all you need is love, but a little chocolate now and then doesn't hurt." yk it resonates with what i feel 4 u. you make me appreciate life every time we talk and spend time with each other, and i also see the strength in you, the independence you carry so well. I know you're used to handling things on your own, and I respect that... BUT BUT I want you to know; you don't always have to. i want to be someone you can depend on, someone you can share the weight with, even the parts you don't talk about. let me be your chocolate when life gets bitter.</p>
             </div>
-            <img src="https://i.ibb.co/B75fhw6/image.png" alt="Kuromi" class="character-img">
             <div class="kuromi-grid" id="kuromiGrid"></div>
             <div class="tap-counter" id="itemCounter">Items: 0/6</div>
             <button class="next-btn" id="next2" onclick="nextPage(3)">Continue →</button>
@@ -814,6 +823,7 @@
         <div class="cooking-container">
             <h1>� Cook with Kuromi! 💙</h1>
             <p class="instruction">Add all ingredients to the pot!</p>
+            <img src="https://i.ibb.co/6cJcHswK/image.png" alt="Kuromi" class="character-img" style="width: 200px; height: 200px;">
             <div class="story-text" id="story3">
                 <div class="photo-container">
                     <div class="photo-placeholder">
@@ -822,7 +832,6 @@
                 </div>
                 <p>while i was watching snoopy (i watched the show so i could totally understand your fav mwehehe), snoopy always said the best meals are made with love, in the past i might not understand it, but now i would because of u. yk whenever u talk about food or cooking your eyes light up in a way that makes me understand what snoopy meant. even though we've only talked for a few days or more than a week, i've already observed so many things, the way you care for the people surrounding u, how u make them smile; you've taught me that without even trying.  you've shown me what it means to care about something so deeply that it becomes part of who you are. and I want to be there for all of it. let me share the successes and the struggles. let me be someone you can depend on, not because you need to, but because you want to. 🌸</p>
             </div>
-            <img src="https://i.ibb.co/6cJcHswK/image.png" alt="Kuromi" class="character-img" style="width: 200px; height: 200px;">
             <div class="pot" id="pot">🍳</div>
             <div class="ingredients-area" id="ingredientsArea"></div>
             <div class="tap-counter" id="cookCounter">Ingredients: 0/5</div>
